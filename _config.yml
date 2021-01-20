@@ -1,10 +1,10 @@
-title: Simple                        # title of the site
-description: A Jekyll Theme          # description of the site
-url: https://professordeng.com       # domain
-baseurl: "/simple"                   # root directory
+title: 洛樱Blog                        # title of the site
+description: 喵喵喵喵喵喵          # description of the site
+url: https://luoying2024.github.io   #https://professordeng.com       # domain
+baseurl: "/luoying"                   # root directory
 
 # Email address
-email: professordeng@qq.com
+email: xiaow3493@gmail.com
 
 # Path of site resources
 img: /simple/assets/img
