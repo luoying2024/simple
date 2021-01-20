@@ -20,27 +20,28 @@ plugins:
   - jekyll-avatar
   - jekyll-mentions
   - jekyll-paginate
-
+  
+  
 # paginate setting
-paginate: 5
+paginate: 7
 
 # Comment system
 ## Docs: https://github.com/gitalk/gitalk/blob/master/readme.md
 gitalk:
-  enable: true 
-  clientID: 6e42adfac0bf61e180f6
-  clientSecret: d1ed44fc8888bbb2bcafb6bbc819ac9dddca5b71
-  repo: simple
-  owner: professordeng
-  admin: professordeng
-  id: simple      # The default is location.pathname
-  title: simple   # Issue title
-  body: simple
+  enable: false 
+  clientID: 
+  clientSecret: 
+  repo: 
+  owner: 
+  admin: 
+  id:      # The default is location.pathname
+  title:    # Issue title
+  body: 
   
 
 # Google Analytics
 ## Docs: https://analytics.google.com/analytics/web/
-google-analytics: UA-165708741-1
+google-analytics: 
 
 # default layout of the articles in _post
 defaults:
