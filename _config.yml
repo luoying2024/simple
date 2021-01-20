@@ -7,9 +7,9 @@ baseurl: "/simple"                 # root directory
 email: xiaow3493@gmail.com
 
 # Path of site resources
-img: /simple/assets/img
-css: /simple/assets/css
-js:  /simple/assets/js
+img: /assets/img
+css: /assets/css
+js:  /assets/js
 
 ## Docs: https://pages.github.com/versions/
 plugins:
