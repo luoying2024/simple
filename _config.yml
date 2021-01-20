@@ -1,7 +1,9 @@
-title: 洛樱Blog                        # title of the site
+title: 洛樱Blog   # title of the site
+SEOTitle: 洛樱
 description: 喵喵喵喵喵喵               # description of the site
 url: https://luoying2024.github.io     #https://professordeng.com       # domain
 baseurl: #"/simple"                 # root directory
+permalink: /:year/:title/
 
 # Email address
 email: xiaow3493@gmail.com
