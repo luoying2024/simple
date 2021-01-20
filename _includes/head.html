@@ -1,6 +1,6 @@
 <head>
   <!-- 网页标题 -->
-  <title>{{ page.title }}</title>
+  <title>{% if page.title %}{{ page.title }} | {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
   
   <!-- 网页编码 -->
   <meta charset="utf-8" />
