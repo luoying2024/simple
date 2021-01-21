@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OBS直播插件及安装包下载
-date: 2021-01-21 0:09/11:31
+date: 2021-01-21 11:31
 comments: true
 
 ---
@@ -23,13 +23,13 @@ OBS即Open Broadcaster Software，它是一个**免费的开源**的**视频录�
 
 当我们安装出现以下界面的时候，我们需要百度“DX 修复”，或者点击上面的“是（Y）”，跳转到下载DX的网页，进行下载安装。
 
-![](https://upload-images.jianshu.io/upload_images/14081052-3d8553d22cc83f54.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/461/format/webp)
+![](https://upload-images.jianshu.io/upload_images/14081052-3d8553d22cc83f54.jpg)
 
 
 
 当我们出现这样的图时，点击“是”，去下载vc库。【如果没有出现，请忽视】
 
-![](https://upload-images.jianshu.io/upload_images/14081052-948f59a2e99206de.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/475/format/webp)
+![](https://upload-images.jianshu.io/upload_images/14081052-948f59a2e99206de.jpg)
 
 
 https://obsproject.com/visual-studio-2017-runtimes
