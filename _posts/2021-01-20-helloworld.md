@@ -8,8 +8,8 @@ comments: true
 OBS即Open Broadcaster Software，它是一个**免费的开源**的**视频录制和视频实时流**软件。其有多种功能并广泛使用在**视频采集，直播**等领域。
 
 ## 下载安装
-[OBS官网下载地址][1]
-  [1]: https://obsproject.com/zh-cn/download
+[OBS官网下载地址]
+https://obsproject.com/zh-cn/download
 
 
 下载完成后，我们找到该文件，双击进行安装。
