@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OBS直播插件及安装包下载
-date: 2021-01-21 0：09发布  11:31-更新
+date: 2021-01-21 0：09/11:31
 comments: true
 
 ---
