@@ -85,9 +85,9 @@ https://obsproject.com/visual-studio-2017-runtimes
 > PS：使用显示器获取，win7的AERO勾上后不会显示出QQ聊天窗口，win8和win10勾与不勾，都会显示QQ聊天窗口
 每修改一次，记得应用一次，
 
+[参考链接](https://www.jianshu.com/p/2c9bed933cc7 "参考链接")
 
-[[参考链接]][空白签名]
-[空白签名]: https://www.jianshu.com/p/2c9bed933cc7 "OBS-Studio版本的使用教程 by空白签名"
+
 
 
 -----
