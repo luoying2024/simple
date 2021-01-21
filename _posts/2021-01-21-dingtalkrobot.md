@@ -1,1 +1,102 @@
+---
+layout: post
+title: 钉钉自定义机器人使用lua推送通知
+date: 2021-01-21 14:31
+comments: true
+---
+
+
+
+### 使用钉钉API和进行远程推送**
+
+
+**使用LUA语言实现**
+
+[钉钉官方接入文档](https://ding-doc.dingtalk.com/doc#/serverapi2/qf2nxq "钉钉官方接入文档")
+
+####获取自定义机器人webhook
+步骤一，打开机器人管理页面。以PC端为例，打开PC端钉钉，点击头像，选择“机器人管理”。
+
+步骤二，在机器人管理页面选择“自定义”机器人，输入机器人名字并选择要发送消息的群，同时可以为机器人设置机器人头像。
+
+步骤三，完成必要的安全设置（至少选择一种），勾选 我已阅读并同意《自定义机器人服务及免责条款》，点击“完成”。安全设置目前有3种方式，设置说明见下文介绍。
+
+步骤四，完成安全设置后，复制出机器人的Webhook地址，可用于向这个群发送消息，格式如下：
+
+https://oapi.dingtalk.com/robot/send?access_token=XXXXXX
+
+注意：请保管好此Webhook 地址，不要公布在外部网站上，泄露后有安全风险。
+
+安全设置
+安全设置目前有3种方式，我们使用第一种方式。
+
+（1）方式一，自定义关键词
+最多可以设置10个关键词，消息中至少包含其中1个关键词才可以发送成功。
+例如：添加了一个自定义关键词：监控报警
+则这个机器人所发送的消息，必须包含 监控报警 这个词，才能发送成功。
+
+
+### 打包好的函数
+
+
+
+
+#### 代码
+
+```lua
+function dtro(key,text,atphone,token,isall)
+  isall=tostring(isall)
+  --token=""
+  urld="https://oapi.dingtalk.com/robot/send?access_token="..token
+  data=([==[{
+    "msgtype": "text", 
+    "text": {
+        "content": "]==]..key..text..[==["
+    }, 
+    "at": {
+        "atMobiles": [
+            "]==]..atphone..[==["
+        ], 
+        "isAtAll": ]==]..isall..[==[
+    }
+}]==])
+  print(data)
+  -- data=dump(data)
+  data=tostring(data)
+  require "import"
+  import"http"
+  header={
+    ["User-Agent"]= "Mozilla/5.0 (Windows NT 7.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904/developer/luoying/xiaow3493@Gmail",
+    ["Content-Type"]="application/json"
+  }
+  Http.post(urld,data,cookie,"utf8",header,function(code,content)
+    if code==200 then
+      if (content:find("ok")) then
+        -- print("OK#\n返回"..content)
+        return content
+      else
+        -- print("错误#\n返回"..content)
+        return content
+      end
+    else
+      print('请求服务端失败'..code.."\n")
+    end
+  end)
+end
+
+
+
+
+--调用方法
+--dtro(key,text,at,token,isall)
+key="#你定义的关键字#"
+text="测试成功"
+token="机器人的key"
+atphone="你在钉钉群里账号的注册号码"
+dtro(key,text,atphone,token,false)
+--最后这个false是是否艾特全体成员
+
+```
+
+[原创:xiaow3493@gmail.com](mailto:xiaow3493@gmail.com)
 
