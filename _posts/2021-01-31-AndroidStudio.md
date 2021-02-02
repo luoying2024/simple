@@ -31,7 +31,7 @@
 
 进入SDK的解压目录下，双击“SDK Manager.exe”打开SDK管理器
 
-#### 下载SDK
+#### 下载之前
 在使用这个管理器的时候，需要使用科学上网，才能进行下载安装；或者你也可以在上面推荐的那个下载SDK的国内安卓工具网站上下载适合你的版本的Android SDK 镜像
 [SDK](https://www.androiddevtools.cn/)
 
@@ -50,11 +50,30 @@ http://mirrors.neusoft.edu.cn  端口：`80`
 
 配置后重新启动SDK Manager
 
-SDK Manager在线下载安装的方式，非常漫长
+#### 下载选择
+
+Tools文件夹里面的Android SDK Tools（这个我们在之前的一步已经下载好了的，一般不会让你再安装了，不过有可能会让你更新），然后就是Android SDK Platform-tools和Android SDKBuild-tools，注意只需要下载最新的版本就行了。
+
+然后就是API的选择了。我们可以看到这里提供了很多很多从Android 2.2到Android 9.x的很多版本的API，那么怎么选择呢。
+新手的话，选择一个最新的版本就好了，因为Android是向下兼容的。其他的以后你要用到了在下载就行了（因为下载安装的速度实在太慢啦。。。）。所以如上图所示，这里我只选择了下载当前最新的Android 5.1.1(API 22)。这里需要说明的是，如果你以后不打算用模拟器调试，而是一直用真机来调试的话，那么就可以不用装“system images“了。
+
+参考
+![图片](https://img-blog.csdn.net/20151116193529271)
+
+![图片](https://img-blog.csdn.net/20151116193607716)
+
+
+
+SDK Manager在线下载安装的方式，非常漫长....
+
 
 
 安装完成是这样子的
 ![安装完毕](https://img-blog.csdn.net/20151116193758466)
+
+
+
+
 
 #### 配置环境变量
 这里需要把`\platform-tools`和`\tools`路径追加到系统环境变量Path中，具体如下：
@@ -77,7 +96,11 @@ Android Debug Bridge version
 
 
 
+
 ### 安装JDK
+
+
+
 
 
 
@@ -87,4 +110,6 @@ Android Debug Bridge version
 
 
 **参考引用**
+
+[SDK配置参考](https://www.cnblogs.com/gufengchen/p/11038029.html)
 
