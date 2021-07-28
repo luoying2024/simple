@@ -6,7 +6,7 @@ baseurl: #"/simple"                 # root directory
 permalink: /:year/:title/
 
 # Email address
-email: 
+email: no.com
 
 # Path of site resources
 img: /assets/img
