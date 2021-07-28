@@ -6,7 +6,7 @@ baseurl: #"/simple"                 # root directory
 permalink: /:year/:title/
 
 # Email address
-email: xiaow3493@gmail.com
+email: 
 
 # Path of site resources
 img: /assets/img
