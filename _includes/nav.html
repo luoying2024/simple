@@ -2,18 +2,20 @@
   
 	  
  <!-------
+ ------------>
 	<div class="nav-search">
     <input type="text" placeholder="{{ site.data.settings.search_tip }}" id="search-input" />
   </div>
-  ------------>
+ 
  <!-------
------------->
+
   <div class="nav-links">
     {% for item in site.data.settings.nav %}
     <a href="{{ item.url | relative_url }}" {% if page.title == item.name %} class="nav-active" {% endif %} >{{ item.name }}</a>
     {% endfor %}
   </div>
-
+------------>
+	
   <div class="nav-links">
     <a href="/">首页</a>
 	<a href="/archives/">归档</a>
